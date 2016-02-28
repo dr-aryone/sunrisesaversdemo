@@ -1,0 +1,136 @@
+<% include partials/header %>
+
+<div class="container">
+  <div class="content">
+    <% include partials/sidebar %>
+
+    <div class="form">
+      <div class="errors" id="error_msg">
+        <span id="error_text"></span>
+        <a href="#" class="msg-close" id="error_close"><i class="fa fa-times"></i></a>
+      </div>
+
+      <h3 class="form-title" id="search_title">Book Search</h3>
+
+      <div class="form-row">
+        <form class="form-section form-section-left" action="post" id="search_id">
+          <fieldset class="form-field">
+            <label for="book_id" class="form-label">Book ID:</label>
+            <input class="form-input" type="number" name="book_id" id="book_id" required>
+          </fieldset>
+
+          <fieldset class="form-field form-field-buttons">
+            <button type="submit" class="form-submit">Search</button>
+          </fieldset>
+        </form>
+
+        <form class="form-section form-section-right" action="post" id="search_publisher">
+          <fieldset class="form-field">
+            <label for="publisher" class="form-label">Publisher:</label>
+            <input class="form-input" type="text" name="publisher" id="publisher" required>
+          </fieldset>
+
+          <fieldset class="form-field form-field-buttons">
+            <button type="submit" class="form-submit">Search</button>
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="form-results" id="search_results">
+        <h3 class="form-title">Results <a href="#" class="form-results-close" id="results_close">[close]</a></h3>
+
+        <div class="results"></div>
+      </div>
+
+      <h3 class="form-title">Add a Book</h3>
+
+      <div class="success" id="success_msg">
+        <span id="success_text"></span>
+        <a href="#" class="msg-close success-close" id="success_close"><i class="fa fa-times"></i></a>
+      </div>
+
+      <form class="form-section" id="add_book" action="post">
+        <!-- simulating sending along the user ID -->
+        <!-- very bad practice in production, just for demo purposes here -->
+        <input type="hidden" name="user_id" value="1234">
+
+        <div class="field-row">
+          <fieldset class="form-field form-field-left">
+            <label for="product_id" class="form-label">Product ID:</label>
+            <input class="form-input" type="number" name="product_id" id="product_id" data-name="Product ID">
+          </fieldset>
+
+          <fieldset class="form-field form-field-right">
+            <label for="title" class="form-label">Title:</label>
+            <input class="form-input" type="text" name="title" id="title" data-name="Title">
+          </fieldset>
+        </div>
+
+        <div class="field-row">
+          <fieldset class="form-field form-field-left">
+            <label for="first_name" class="form-label">First Name:</label>
+            <input class="form-input" type="text" name="first_name" id="first_name" data-name="First Name">
+          </fieldset>
+
+          <fieldset class="form-field form-field-right">
+            <label for="last_name" class="form-label">Last Name:</label>
+            <input class="form-input" type="text" name="last_name" id="last_name" data-name="Last Name">
+          </fieldset>
+        </div>
+
+        <div class="field-row">
+          <fieldset class="form-field form-field-left">
+            <label for="msrp" class="form-label">MSRP:</label>
+            <input class="form-input" type="text" name="msrp" id="msrp"  data-name="MSRP">
+          </fieldset>
+
+          <fieldset class="form-field form-field-right">
+            <label for="ourprice" class="form-label">Our Price:</label>
+            <input class="form-input" type="text" name="ourprice" id="ourprice" data-name="Our Price">
+          </fieldset>
+        </div>
+
+        <div class="field-row">
+          <fieldset class="form-field form-field-left">
+            <label for="tags" class="form-label">Tags:</label>
+            <input class="form-input" type="text" name="tags" id="tags" data-name="Tags">
+          </fieldset>
+
+          <fieldset class="form-field form-field-right">
+            <label for="pages" class="form-label">Pages:</label>
+            <input class="form-input" type="number" name="pages" id="pages" data-name="Pages">
+          </fieldset>
+        </div>
+
+        <div class="field-row">
+          <fieldset class="form-field form-field-left">
+            <label for="year" class="form-label">Year:</label>
+            <input class="form-input" type="number" name="year" id="year" data-name="Year">
+          </fieldset>
+
+          <fieldset class="form-field form-field-right">
+            <label for="publisher" class="form-label">Publisher:</label>
+            <input class="form-input" type="text" name="publisher" id="publisher" data-name="Publisher">
+          </fieldset>
+        </div>
+
+        <div class="field-row">
+          <fieldset class="form-field form-field-left">
+            <label for="type" class="form-label">Type:</label>
+            <input class="form-input" type="text" name="type" id="type" data-name="Type">
+          </fieldset>
+
+          <fieldset class="form-field form-field-right">
+            <label for="qty_stock" class="form-label">Qty Stock:</label>
+            <input class="form-input" type="number" name="qty_stock" id="qty_stock" data-name="Qty Stock">
+          </fieldset>
+        </div>
+
+        <fieldset class="form-field form-field-buttons">
+          <button type="submit" class="form-submit">Submit Book</button>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+<% include partials/footer %>

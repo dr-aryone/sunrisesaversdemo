@@ -1,0 +1,182 @@
+[
+  {
+    "product_id": 243,
+    "title": "War and Peace",
+    "author": {
+      "first_name": "Leo",
+      "last_name": "Tolstoy"
+    },
+    "msrp": 29.95,
+    "ourprice": 29.90,
+    "tags": ["classic", "fiction", "war", "historical", "romance"],
+    "pages": 1225,
+    "publication": {
+      "year": "1869",
+      "publisher": "The Russian Messenger",
+      "type": "hardcover"
+    },
+    "qty_stock": 23
+  },
+  {
+    "product_id": 363,
+    "title": "Eloquent JavaScript",
+    "author": {
+      "first_name": "Marjin",
+      "last_name": "Haverbeke"
+    },
+    "msrp": 29.95,
+    "ourprice": 22.99,
+    "tags": ["nonfiction", "programming", "educational"],
+    "pages": 224,
+    "publication": {
+      "year": "2011",
+      "publisher": "No Starch Press",
+      "type": "textbooks"
+    },
+    "qty_stock": 23
+  },
+  {
+    "product_id": 211,
+    "title": "JavaScript: The Good Parts",
+    "author": {
+      "first_name": "Douglas",
+      "last_name": "Crockford"
+    },
+    "msrp": 19.99,
+    "ourprice": 13.49,
+    "tags": ["nonfiction", "programming", "educational"],
+    "pages": 176,
+    "publication": {
+      "year": "2008",
+      "publisher": "O'Reilly",
+      "type": "textbooks"
+    },
+    "qty_stock": 20
+  },
+  {
+    "product_id": 560,
+    "title": "Curious George",
+    "author": {
+      "first_name": "H.A.",
+      "last_name": "Rey"
+    },
+    "msrp": 8.99,
+    "ourprice": 7.01,
+    "tags": ["fiction", "easy reader"],
+    "pages": 224,
+    "publication": {
+      "year": "2011",
+      "publisher": "HMH Books for Young Readers",
+      "type": "childrens"
+    },
+    "qty_stock": 23
+  },
+  {
+    "product_id": 566,
+    "title": "John Dies at the End",
+    "author": {
+      "first_name": "David",
+      "last_name": "Wong"
+    },
+    "msrp": 11.99,
+    "ourprice": 10.61,
+    "tags": ["fiction", "sci-fi", "horror"],
+    "pages": 496,
+    "publication": {
+      "year": "2012",
+      "publisher": "St. Margin's Griffin",
+      "type": "paperback"
+    },
+    "qty_stock": 36
+  },
+  {
+    "product_id": 442,
+    "title": "Fevre Dream",
+    "author": {
+      "first_name": "George R.R.",
+      "last_name": "Martin"
+    },
+    "msrp": 16.99,
+    "ourprice": 15.48,
+    "tags": ["fiction", "horror", "historical"],
+    "pages": 368,
+    "publication": {
+      "year": "2004",
+      "publisher": "Random House LLC",
+      "type": "paperback"
+    },
+    "qty_stock": 41
+  },
+  {
+    "product_id": 987,
+    "title": "Japanese Street Slang",
+    "author": {
+      "first_name": "Peter",
+      "last_name": "Constantine"
+    },
+    "msrp": 14.95,
+    "ourprice": 13.99,
+    "tags": ["nonfiction", "educational", "language"],
+    "pages": 186,
+    "publication": {
+      "year": "1992",
+      "publisher": "Shambhala Publications, Inc.",
+      "type": "paperback"
+    },
+    "qty_stock": 5
+  },
+  {
+    "product_id": 111,
+    "title": "The Ugly Renaissance",
+    "author": {
+      "first_name": "Alexander",
+      "last_name": "Lee"
+    },
+    "msrp": 14.95,
+    "ourprice": 13.99,
+    "tags": ["nonfiction", "history"],
+    "pages": 397,
+    "publication": {
+      "year": "2013",
+      "publisher": "Doubleday",
+      "type": "hardcover"
+    },
+    "qty_stock": 11
+  },
+  {
+    "product_id": 122,
+    "title": "Nightwatch",
+    "author": {
+      "first_name": "Sergei",
+      "last_name": "Lukyanenko"
+    },
+    "msrp": 13.95,
+    "ourprice": 12.99,
+    "tags": ["fiction", "fantasy"],
+    "pages": 455,
+    "publication": {
+      "year": "2006",
+      "publisher": "Hyperion",
+      "type": "hardcover"
+    },
+    "qty_stock": 15
+  },
+  {
+    "product_id": 334,
+    "title": "Goodnight Moon",
+    "author": {
+      "first_name": "Margaret",
+      "last_name": "Brown"
+    },
+    "msrp": 11.99,
+    "ourprice": 10.44,
+    "tags": ["fiction", "easy reader"],
+    "pages": 30,
+    "publication": {
+      "year": "2007",
+      "publisher": "HaperFestival",
+      "type": "childrens"
+    },
+    "qty_stock": 34
+  }
+]

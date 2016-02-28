@@ -1,0 +1,46 @@
+.footer {
+  @extend %clearfix;
+}
+
+.footer-copyright {
+  color: #777;
+  font-weight: bold;
+  margin: 2em 0;
+}
+
+.footer-links {
+  margin-top: 1.5em;
+  display: none;
+}
+
+.footer-link {
+  color: $bodytext;
+  display: block;
+  margin-bottom: 0.3em;
+  width: 16.66%;
+  float: left;
+  padding-left: 2em;
+}
+
+@media (min-width: 1000px) {
+  .footer {
+    border-top: 1px solid #ccc;
+    margin-bottom: 3em;
+    clear: both;
+  }
+
+  .footer-copyright {
+    text-align: center;
+    margin-top: 1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-copyright {
+    display: none;
+  }
+
+  .footer-links {
+    display: block;
+  }
+}

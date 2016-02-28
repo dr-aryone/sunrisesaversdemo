@@ -1,0 +1,78 @@
+// Import some dependencies
+@import "../lib/normalize-scss/normalize";
+
+// Import Font Awesome icons set and change to correct path
+$fa-font-path: "../lib/font-awesome/fonts";
+@import "../lib/font-awesome/scss/font-awesome";
+
+// Variables, placeholders and mixins
+$topnavbg: #af0000;
+$topnavmenubg: #ffd2a3;
+$topnavshadow: #999;
+$buttoncta: #f00;
+$bodytext: #444;
+$heroborder: #E7BAC0;
+$shadedbg: #F4F6E9;
+$menuitembg: #FFFBCB;
+$buttonbg: #F5A254;
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Global styles
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  color: $bodytext;
+  background: #fff;
+  background: -moz-linear-gradient(top, #fff 0%, #fffbd1 81%, #fcdbba 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #fff), color-stop(81%, #fffbd1), color-stop(100%, #fcdbba));
+  background: -webkit-linear-gradient(top, #fff 0%, #fffbd1 81%, #fcdbba 100%);
+  background: -o-linear-gradient(top, #fff 0%, #fffbd1 81%, #fcdbba 100%);
+  background: -ms-linear-gradient(top, #fff 0%, #fffbd1 81%, #fcdbba 100%);
+  background: linear-gradient(to bottom, #fff 0%, #fffbd1 81%, #fcdbba 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fcdbba', GradientType=0 );
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+a {
+  color: $topnavbg;
+  text-decoration: none;
+}
+
+.container {
+  @extend %clearfix;
+  padding: 0 1em;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.content {
+  @extend %clearfix;
+}
+
+// Import partials
+@import "partials/topnav";
+@import "partials/hero";
+@import "partials/sidebar";
+@import "partials/info";
+@import "partials/form";
+@import "partials/footer";

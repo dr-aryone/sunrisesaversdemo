@@ -1,0 +1,160 @@
+.sidebar {
+  color: $topnavbg;
+}
+
+.sidebar-content {
+  background-color: $shadedbg;
+  padding: 1em 0.5em;
+  border: 3px solid $topnavmenubg;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.sidebar-heading {
+  background-color: $topnavmenubg;
+  font-size: 1.3em;
+  font-family: serif;
+  font-weight: normal;
+  padding: 0.5em 1em;
+  padding-right: 3em;
+  margin: 0;
+  display: inline-block;
+}
+
+.sidebar-item {
+  background-color: $menuitembg;
+  color: $topnavbg;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 46%;
+  padding: 1em;
+  margin: 0.5em 2%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sidebar-toggle,
+.sidebar-submenu,
+.adspot {
+  display: none;
+}
+
+.sidebar-submenu-section {
+  margin-top: 0.75em;
+  padding-top: 0.75em;
+  border-top: 1px dotted $topnavbg;
+}
+
+.sidebar-section-toggle {
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -o-transform: rotate(0);
+  transform: rotate(0);
+  -webkit-transition: rotate 1s;
+  -moz-transition: rotate 1s;
+  -o-transition: rotate 1s;
+  transition: rotate 1s;
+}
+
+.sidebar-section-toggle-open {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transition: rotate 1s;
+  -moz-transition: rotate 1s;
+  -o-transition: rotate 1s;
+  transition: rotate 1s;
+}
+
+.sidebar-submenu-links {
+  list-style: none;
+  margin: 0.5em;
+  padding-left: 0.75em;
+  display: none;
+}
+
+.sidebar-submenu-link {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.sidebar-submenu-item {
+  margin: 0.5em 0;
+}
+
+.adspot {
+  margin: 1em;
+}
+
+.mock-banner {
+  background-color: #555;
+  width: 100%;
+  height: 75px;
+  border: 3px solid #000;
+}
+
+@media (min-width: 1000px) {
+  .sidebar-column {
+    width: 25%;
+    padding-right: 2em;
+  }
+
+  .sidebar {
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    float: left;
+  }
+
+  .sidebar-content {
+    padding-left: 0;
+  }
+
+  .sidebar-item {
+    text-align: left;
+    width: 95%;
+    margin-left: 0;
+    margin-right: 0.75em;
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .sidebar-toggle,
+  .adspot {
+    display: block;
+  }
+
+  .sidebar-toggle {
+    margin-top: 1px;
+    float: right;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transition: rotate 1s;
+    -moz-transition: rotate 1s;
+    -o-transition: rotate 1s;
+    transition: rotate 1s;
+  }
+
+  .sidebar-toggle-open {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition: rotate 1s;
+    -moz-transition: rotate 1s;
+    -o-transition: rotate 1s;
+    transition: rotate 1s;
+  }
+}
+
+@media (min-width: 1400px) {
+  .sidebar-column {
+    width: 20%;
+  }
+}
